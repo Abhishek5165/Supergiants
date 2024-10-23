@@ -13,7 +13,7 @@ if(index == 0){
 }
 bool notTake = solve(index-1,target,arr);
 bool take = false;
-if(target >= target){
+if(target >= arr[index]){
     take = solve(index-1,target-arr[index],arr);
 }
 return (take || notTake);
